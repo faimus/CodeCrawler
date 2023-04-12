@@ -6,11 +6,23 @@ customerSupport = "https://weworkremotely.com/categories/remote-customer-support
 contract = "https://weworkremotely.com/remote-contract-jobs#job-listings"
 devOpsSysAdm = "https://weworkremotely.com/categories/remote-devops-sysadmin-jobs#job-listings"
 
+selection = input("Please Select a Category: \n1. Customer Support \n2. Contract \n3. DevOps & System Admin\n")
+
+if selection == "1":
+  url = customerSupport
+elif selection == "2":
+  url = contract
+elif selection == "3":
+  url = devOpsSysAdm
+else:
+  print ("Selection is Invalid")
+  
+
 # URL of the website you want to scrape
-url = contract
+# url = contract
 
 # Send a GET request to the URL
-kresponse = requests.get(url)
+response = requests.get(url)
 
 # Parse the HTML content using BeautifulSoup
 soup = BeautifulSoup(response.content, "html.parser")
