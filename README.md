@@ -5,7 +5,7 @@ This Python script scrapes remote job postings from [https://weworkremotely.com]
 ## Issues to Look Into
 
 1. Initialization needs to be outside the program loop to prevent resetting of `oldPostings` and `newPostings` in each iteration.
-2. Need to figure out how to keep `oldPostings` and `newPostings` consistent with URL selections. The while loop currently keeps executing as long as `oldPostings` and `newPostings` are the same, implying that the loop breaks when there is a mismatch or a new posting is found.
+2. Need to keep `oldPostings` and `newPostings` consistent with URL selections. The while loop currently keeps executing as long as `oldPostings` and `newPostings` are the same, implying that the loop breaks when there is a mismatch or a new posting is found.
 
 ## Dependencies
 
