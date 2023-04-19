@@ -1,4 +1,4 @@
-# Remote Job Postings Scraper
+# Weworkremotely Scraper (WIP)
 
 This Python script scrapes remote job postings from [https://weworkremotely.com](https://weworkremotely.com) based on selected categories: Customer Support, Contract, and DevOps & System Admin.
 
